@@ -9,6 +9,11 @@ p, h1, h2, h3 {
     padding: 1em 0;
 }
 
+h2 {
+    /* font-size: 1.5em; */
+    font-size: 26.4px;
+}
+
 header {
     min-height: 450px;
     color: white;
@@ -36,7 +41,13 @@ header .bg-image {
     display: block;
     padding: 0 1.5em;
     height: 450px;
+    /* max-width: 830px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
+
 
 h1 {
     font-size: 35.2px;
@@ -44,11 +55,15 @@ h1 {
     padding-top: 100px;
 }
 
-p {
+.header-content p {
     font-size: 17.6px;
+    /* text-align: center; */
     max-width: 830px;
     display: block;
 }
+
+
+
 
 .btn {
     width: 159.45px;
@@ -68,7 +83,7 @@ p {
     color: black;
 }
 
-.seaction-a {
+.section-a {
     background-color: rgb(234, 234, 234);
     width: 100%;
     min-height: 200px;
@@ -89,7 +104,6 @@ p {
 
 .section-a-content h2 {
     column-span: all;
-    font-size: 26.4px
 }
 
 .section-a-content article{
@@ -105,14 +119,14 @@ p {
     padding-bottom: 1em;
 }
 
-.seaction-b {
+.section-b {
     width: 100%;
     min-height: 520px;
     padding: 2em 1em 1em;
     background-color: #333333;
 }
 
-.seaction-b ul {
+.section-b ul {
     max-width: 880px;
     min-height: 520px;
     padding: 0;
@@ -122,7 +136,7 @@ p {
     list-style-type: none;
 }
 
-.seaction-b li {
+.section-b li {
     width: 100%;
     margin-bottom: 1em;
     background: #fff;
@@ -145,7 +159,7 @@ img {
     text-align: center;
 }
 
-.seaction-c {
+.section-c {
     width: 100%;
     min-height: 180px;
     background: #fff;
@@ -159,14 +173,36 @@ img {
     max-width: 880px;
 }
 
-.seaction-c h2 {
-    font-size: 26.4px;
+.section-d {
+    min-height: 300px;
+    width: 100%;
+    background-color: aqua;
+    color: white;
+    display: flex;
 }
 
-.section-c-content p{
-    font-size: 17.6px;
+.box {
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.box:first-child {
+    background-color: #2690d4;
+}
+
+.box:last-child {
+    background-color: #333333
+}
+
+.box h2, .box p {
+    width: 90%;
+}
 
 @media (max-width: 700px) {
     .section-a-content {
@@ -177,9 +213,13 @@ img {
         column-count: 1;   
     }
 
-    .seaction-b ul {
+    .section-b ul {
         flex-direction: column;
         align-items: center;
+    }
+
+    .section-d  {
+        flex-direction: column;
     }
 }
 
