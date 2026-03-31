@@ -47,7 +47,6 @@ h1 {
 p {
     font-size: 17.6px;
     max-width: 830px;
-    /* padding: 17.6px 0; */
     display: block;
 }
 
@@ -83,7 +82,7 @@ p {
 }
 
 .section-a-content {
-    max-width: 880px;
+    max-width: 900px;
     height: 100%;
     padding: 0 1.5em;
 }
@@ -91,7 +90,6 @@ p {
 .section-a-content h2 {
     column-span: all;
     font-size: 26.4px
-    
 }
 
 .section-a-content article{
@@ -103,10 +101,8 @@ p {
 }
 
 .section-a-content article p {
-    /* padding-top: 0; */
     padding-top: 0;
     padding-bottom: 1em;
-    min-width: 300px;
 }
 
 .seaction-b {
@@ -122,18 +118,12 @@ p {
     padding: 0;
     margin: auto;
     display: flex;
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    /* align-items: stretch; */
     gap: 20px;
     list-style-type: none;
 }
 
 .seaction-b li {
-    /* width: 30%; */
-    /* height: 200%; */
     width: 100%;
-    /* border: 2px solid wheat; */
     margin-bottom: 1em;
     background: #fff;
     color: #333;
@@ -153,6 +143,28 @@ img {
 .card-content {
     padding: 1.5em;
     text-align: center;
+}
+
+.seaction-c {
+    width: 100%;
+    min-height: 180px;
+    background: #fff;
+    color: #333;
+    padding: 2em;
+    text-align: center;
+}
+
+.section-c-content {
+    margin: auto;
+    max-width: 880px;
+}
+
+.seaction-c h2 {
+    font-size: 26.4px;
+}
+
+.section-c-content p{
+    font-size: 17.6px;
 }
 
 
