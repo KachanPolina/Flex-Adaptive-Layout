@@ -5,6 +5,10 @@
     line-height: 1.5;
 }
 
+p, h1, h2, h3 {
+    padding: 1em 0;
+}
+
 header {
     min-height: 450px;
     color: white;
@@ -36,13 +40,14 @@ header .bg-image {
 
 h1 {
     font-size: 35.2px;
+    padding-bottom: 0;
     padding-top: 100px;
 }
 
 p {
     font-size: 17.6px;
     max-width: 830px;
-    padding: 17.6px 0;
+    /* padding: 17.6px 0; */
     display: block;
 }
 
@@ -84,7 +89,6 @@ p {
 }
 
 .section-a-content h2 {
-    padding: 1em 0;
     column-span: all;
     font-size: 26.4px
     
@@ -99,10 +103,58 @@ p {
 }
 
 .section-a-content article p {
+    /* padding-top: 0; */
     padding-top: 0;
     padding-bottom: 1em;
-    min-width: 400px;
+    min-width: 300px;
 }
+
+.seaction-b {
+    width: 100%;
+    min-height: 520px;
+    padding: 2em 1em 1em;
+    background-color: #333333;
+}
+
+.seaction-b ul {
+    max-width: 880px;
+    min-height: 520px;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    gap: 20px;
+    list-style-type: none;
+}
+
+.seaction-b li {
+    /* width: 30%; */
+    /* height: 200%; */
+    width: 100%;
+    /* border: 2px solid wheat; */
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 1.5em;
+    text-align: center;
+}
+
 
 @media (max-width: 700px) {
     .section-a-content {
@@ -112,7 +164,14 @@ p {
     .section-a-content article{
         column-count: 1;   
     }
+
+    .seaction-b ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
+
 
 
 
