@@ -204,6 +204,30 @@ img {
     width: 90%;
 }
 
+footer {
+    width: 100%;
+    /* min-height: 100px; */
+    min-height: 27px;
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+footer div {
+    width: 90%;
+    height: 27px;
+    font-size: 17.6px;
+}
+
+footer div a {
+    color: #2690d4;
+    text-decoration: none;
+}
+
 @media (max-width: 700px) {
     .section-a-content {
         width: 100%;
@@ -219,6 +243,10 @@ img {
     }
 
     .section-d  {
+        flex-direction: column;
+    }
+
+    footer {
         flex-direction: column;
     }
 }
